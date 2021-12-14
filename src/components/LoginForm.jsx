@@ -10,7 +10,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     const authObject = {
-      "Project-ID": "5e0369ec-c2b3-4d37-87eb-d7bb3636462d",
+      "Project-ID": process.env.REACT_APP_PROJECT_ID,
       "User-Name": username,
       "User-Secret": password,
     };
